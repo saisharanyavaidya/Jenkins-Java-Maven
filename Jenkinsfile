@@ -12,7 +12,9 @@ pipeline {
         }
         stage('Build the application'){
             steps{
+                sh """
                 mvn clean install
+                """
             }
         }
     }
