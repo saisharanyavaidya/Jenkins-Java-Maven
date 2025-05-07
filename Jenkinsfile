@@ -10,5 +10,10 @@ pipeline {
                 echo "success"
             }
         }
+        stage(Build the application){
+            steps{
+                mvn clean install
+            }
+        }
     }
 }
